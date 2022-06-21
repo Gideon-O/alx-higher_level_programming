@@ -1,13 +1,15 @@
 #!/usr/bin/python3
+
+
 def safe_print_division(a, b):
     """
-    Function to multuply two integers
-    Returns the value of the division, otherwise returns None
+    divides two integers and prints the result
+    catches divide by zero exception
     """
     try:
-        div_int = a / b 
+        res = a / b
     except ZeroDivisionError:
-        div_int = None
+        res = None
     finally:
-        print("Inside Result: {}".format(div_int))
-    return div_int
+        print("Inside result: {}".format(res))
+    return res
