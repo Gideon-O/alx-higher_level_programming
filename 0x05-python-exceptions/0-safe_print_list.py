@@ -1,16 +1,15 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
     """
-    Prints the elements of a list
+    prints the integers in a list passed to it
     Returns the number of elements printed
     """
-    int y = 0
-
+    printed = 0
     for i in range(x):
         try:
             print("{:d}".format(my_list[i]), end="")
-            y += 1
+            printed += 1
         except:
             continue
     print()
-    return y
+    return printed
