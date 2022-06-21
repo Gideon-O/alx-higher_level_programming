@@ -9,8 +9,8 @@ def safe_print_list(my_list=[], x=0):
         try:
             print("{:d}".format(my_list[i]), end="")
             printed += 1
-    except IndexError:
-        print("Invalid Index!")
-    finally:
-        print()
+        except IndexError:
+            print("Invalid Index!")
+        finally:
+            print()
     return printed
